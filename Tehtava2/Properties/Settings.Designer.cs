@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tehtava1.Properties
+namespace Tehtava2.Properties
 {
 
 
