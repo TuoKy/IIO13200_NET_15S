@@ -1,0 +1,35 @@
+﻿<Window x:Class="Tehtava3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="418.343" Width="694.822">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="325*"/>
+            <ColumnDefinition Width="192*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="eNimi" HorizontalAlignment="Left" Height="23" Margin="107,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="sNimi" HorizontalAlignment="Left" Height="23" Margin="107,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="sHinta" HorizontalAlignment="Left" Height="23" Margin="107,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="leNimi" Content="Etunimi" HorizontalAlignment="Left" Margin="19,44,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lsNimi" Content="Sukunimi" HorizontalAlignment="Left" Margin="19,92,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lsHinta" Content="Siirtohinta" HorizontalAlignment="Left" Margin="19,139,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="seura" HorizontalAlignment="Left" Margin="107,199,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lSeura" Content="Seura" HorizontalAlignment="Left" Margin="19,195,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="bLuoPelaaja" HorizontalAlignment="Left" Margin="257,46,0,0" VerticalAlignment="Top" Width="152" Height="25" Content="Luo pelaaja" Click="bLuoPelaaja_Click"/>
+        <Button x:Name="bTallennaPelaaja" Content="Tallenna pelaaja" HorizontalAlignment="Left" Margin="257,94,0,0" VerticalAlignment="Top" Width="152" Click="bTallennaPelaaja_Click"/>
+        <Button x:Name="bPoistaPelaaja" Content="Poista pelaaja" HorizontalAlignment="Left" Margin="257,143,0,0" VerticalAlignment="Top" Width="152" Click="bPoistaPelaaja_Click"/>
+        <Button x:Name="bKirjoitaPelaajat" Content="Kirjoita pelaajat" HorizontalAlignment="Left" Margin="257,199,0,0" VerticalAlignment="Top" Width="152" Click="bKirjoitaPelaajat_Click"/>
+        <Button x:Name="bLopetus" Content="Lopetus" HorizontalAlignment="Left" Margin="257,244,0,0" VerticalAlignment="Top" Width="152" Click="bLopetus_Click"/>
+        <ListBox x:Name="luodutPelaajat" Grid.Column="1" HorizontalAlignment="Left" Height="296" Margin="25,19,0,0" VerticalAlignment="Top" Width="195" SelectionChanged="luodutPelaajat_SelectionChanged"/>
+        <StatusBar x:Name="statusBar" HorizontalAlignment="Left" Height="36" Margin="10,352,0,0" VerticalAlignment="Top" Width="667" Grid.ColumnSpan="2">
+            <StatusBarItem>
+                <TextBlock x:Name="statusTeksti" Text="Mitään ei ole tehty" IsEnabled="False" Cursor="None"/>
+            </StatusBarItem>
+        </StatusBar>
+
+    </Grid>
+</Window>
