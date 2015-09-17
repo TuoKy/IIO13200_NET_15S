@@ -51,13 +51,23 @@ namespace Tehtava3
             return false;
         }
 
+        private bool katsoOnkoSyottoValid()
+        {
+            if (!eNimi.Text.Contains(" ") && !sNimi.Text.Contains(" "))
+            {
+                float testi;
+                if (float.TryParse(sHinta.Text, out testi) && eNimi.Text.Length > 0 && sNimi.Text.Length > 0 &&
+                        seura.Text.Length > 0 && sHinta.Text.Length > 0)
+                    return true;
+            }
+
+            return false;
+        }
 
         private void bLuoPelaaja_Click(object sender, RoutedEventArgs e)
         {
-            float testi;
 
-            if (float.TryParse(sHinta.Text, out testi) && eNimi.Text.Length > 0 && sNimi.Text.Length > 0 &&
-                seura.Text.Length > 0 && sHinta.Text.Length > 0)
+            if (katsoOnkoSyottoValid())
             {
                 try
                 {
@@ -85,12 +95,13 @@ namespace Tehtava3
                 statusTeksti.Text = "Syöte Virheellinen";
         }
 
+
+
         private void bTallennaPelaaja_Click(object sender, RoutedEventArgs e)
         {
-            float testi;
+            
 
-            if (float.TryParse(sHinta.Text, out testi) && eNimi.Text.Length > 0 && sNimi.Text.Length > 0 &&
-                seura.Text.Length > 0 && sHinta.Text.Length > 0)
+            if (katsoOnkoSyottoValid())
             {
                 try
                 {
@@ -205,6 +216,8 @@ namespace Tehtava3
             }
 
         }
+
+
 
         private static void UpdateSetting(string key, string value)
         {
