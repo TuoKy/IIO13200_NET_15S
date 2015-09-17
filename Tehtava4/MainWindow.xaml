@@ -1,0 +1,19 @@
+﻿<Window x:Class="Tehtava4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="331.178">
+    <Grid Margin="0,0,2,0">
+        <StackPanel>
+            <Button x:Name="bXml" Content="xmlDataProvider" HorizontalAlignment="Left" Margin="34,28,0,0" VerticalAlignment="Top" Width="144" Click="bXml_Click"/>
+            <Button x:Name="bXml2" Content="xmlDataProvider" HorizontalAlignment="Left" Margin="34,28,0,0" VerticalAlignment="Top" Width="144"/>
+            <Button x:Name="bXml3" Content="xmlDataProvider" HorizontalAlignment="Left" Margin="34,28,0,0" VerticalAlignment="Top" Width="144"/>
+            <Button x:Name="bXml4" Content="xmlDataProvider" HorizontalAlignment="Left" Margin="34,28,0,0" VerticalAlignment="Top" Width="144"/>
+        </StackPanel>
+       
+
+    </Grid>
+</Window>
