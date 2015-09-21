@@ -36,7 +36,9 @@ namespace Tehtava4
         private void beatDownXml()
         {
             XmlDocument doc = new XmlDocument();
-            doc.Load("D:\\IIO13200_NET_15S\\Tehtava4\\Viinit.xml");
+            doc.Load("D:\\githubTyöt\\IIO13200_NET_15S\\Tehtava4\\Viinit.xml");
+
+            maat.Add("");
 
             foreach (XmlNode temp in doc.SelectNodes("/viinikellari/wine/maa"))
             {
@@ -47,12 +49,17 @@ namespace Tehtava4
 
         }
 
-
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void button_Click_1(object sender, RoutedEventArgs e)
         {
-            if(comboBox.Text.Length > 0)
+            XmlDataProvider p = viinit.DataContext as XmlDataProvider;
+
+            if (comboBox.Text.Length > 0)
             {
-                viinit
+                p.XPath = string.Format("viinikellari/wine[contains(maa,\"{0}\")]", comboBox.Text);
+            }
+            else
+            {
+                p.XPath = "viinikellari/wine";
             }
         }
     }

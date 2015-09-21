@@ -12,7 +12,7 @@
             </XmlDataProvider>
         </Grid.Resources>
 
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="18,19,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.393,0.201"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="18,19,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.393,0.201" Click="button_Click_1"/>
         <ComboBox x:Name="comboBox"  HorizontalAlignment="Left" Margin="145,19,0,0" VerticalAlignment="Top" Width="120" AlternationCount="1" DataContext="{StaticResource viinidataa}">
         </ComboBox>
         <DataGrid x:Name="viinit"  DataContext="{StaticResource viinidataa}" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="18,67,-176,-333">
