@@ -6,9 +6,11 @@
         xmlns:local="clr-namespace:Tehtava4"
         mc:Ignorable="d"
         Title="Viinikellari1" Height="404.734" Width="671.893">
+    
     <Grid>
+    
         <Grid.Resources>
-            <XmlDataProvider x:Key="viinidataa" Source="Viinit.xml" XPath="viinikellari/wine">
+            <XmlDataProvider x:Key="viinidataa" XPath="viinikellari/wine">
             </XmlDataProvider>
         </Grid.Resources>
 

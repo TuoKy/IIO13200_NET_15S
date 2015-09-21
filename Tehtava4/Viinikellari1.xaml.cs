@@ -24,11 +24,21 @@ namespace Tehtava4
     {
         public string kayttaja { get; set; }
 
+        public string fileLocation { get; set; }
+
         public ObservableCollection<string> maat = new ObservableCollection<string>();
 
         public Viinikellari1()
         {            
             InitializeComponent();
+            
+
+        }
+
+        public void purkka()
+        {
+            XmlDataProvider p = viinit.DataContext as XmlDataProvider;
+            p.Source = new Uri(fileLocation);
             beatDownXml();
             comboBox.ItemsSource = maat;
         }
@@ -36,7 +46,7 @@ namespace Tehtava4
         private void beatDownXml()
         {
             XmlDocument doc = new XmlDocument();
-            doc.Load("D:\\githubTyöt\\IIO13200_NET_15S\\Tehtava4\\Viinit.xml");
+            doc.Load(fileLocation);
 
             maat.Add("");
 

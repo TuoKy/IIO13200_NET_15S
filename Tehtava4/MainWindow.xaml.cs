@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,8 @@ namespace Tehtava4
         {
             Viinikellari1 vk = new Viinikellari1();
             vk.kayttaja = "Jaska Jokunen";
+            vk.fileLocation = ConfigurationManager.AppSettings["k1"];
+            vk.purkka(); // en ole ylpeä tästä mutten keksiny miten muuten saan sourcen app.cogigista xmldataproviderille
             vk.ShowDialog();
         }
     }
