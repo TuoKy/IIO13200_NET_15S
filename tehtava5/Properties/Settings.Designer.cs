@@ -25,8 +25,8 @@ namespace tehtava5.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("@\"Data source=eight.labranet.jamk.fi;initial catalog=DemoxOy;user=koodari;passwor" +
-            "d=koodari13\";")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\"Data source=eight.labranet.jamk.fi;initial catalog=DemoxOy;user=koodari;password" +
+            "=koodari13\";")]
         public string connStr {
             get {
                 return ((string)(this["connStr"]));

@@ -28,9 +28,15 @@ namespace tehtava5
 
         private void buttonGetDataTable_Click(object sender, RoutedEventArgs e)
         {
-            string location = tehtava5.Properties.Settings.Default.connStr;
+            string location = Properties.Settings.Default.connStr;
             dgData.DataContext = JAMK.IT.DBDemoxOy.getDataReal(location);
             
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            string location = Properties.Settings.Default.connStr;
+            dgData.DataContext = JAMK.IT.DBDemoxOy.getDataRealById(location, textBox.Text);
         }
     }
 }

@@ -4,3 +4,9 @@ D:\IIO13200_NET_15S\adoDatareader\bin\Debug\adoDatareader.pdb
 D:\IIO13200_NET_15S\adoDatareader\obj\Debug\adoDatareader.csprojResolveAssemblyReference.cache
 D:\IIO13200_NET_15S\adoDatareader\obj\Debug\adoDatareader.exe
 D:\IIO13200_NET_15S\adoDatareader\obj\Debug\adoDatareader.pdb
+D:\githubTyöt\IIO13200_NET_15S\adoDatareader\bin\Debug\adoDatareader.exe.config
+D:\githubTyöt\IIO13200_NET_15S\adoDatareader\obj\Debug\adoDatareader.exe
+D:\githubTyöt\IIO13200_NET_15S\adoDatareader\obj\Debug\adoDatareader.pdb
+D:\githubTyöt\IIO13200_NET_15S\adoDatareader\bin\Debug\adoDatareader.exe
+D:\githubTyöt\IIO13200_NET_15S\adoDatareader\bin\Debug\adoDatareader.pdb
+D:\githubTyöt\IIO13200_NET_15S\adoDatareader\obj\Debug\adoDatareader.csprojResolveAssemblyReference.cache

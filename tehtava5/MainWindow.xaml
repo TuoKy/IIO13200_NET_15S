@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tehtava5"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button x:Name="buttonGetDataTable" Content="Hae läsnäolot" Margin="0,10,0,282" Click="buttonGetDataTable_Click"/>
-        <DataGrid x:Name="dgData" Margin="0,52,10,10" ItemsSource="{Binding}"/>
+        Title="MainWindow" Height="619.915" Width="525">
+    <Grid Margin="0,0,0,-121">
+        <Button x:Name="buttonGetDataTable" Content="Hae läsnäolot" Margin="67,10,61,0" Click="buttonGetDataTable_Click" Height="34" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dgData" Margin="0,107,0,132" ItemsSource="{Binding}"/>
+        <Button x:Name="button" Content="hae id:llä" HorizontalAlignment="Left" Margin="67,77,0,0" VerticalAlignment="Top" Width="389" Click="button_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="67,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389"/>
 
     </Grid>
 </Window>
