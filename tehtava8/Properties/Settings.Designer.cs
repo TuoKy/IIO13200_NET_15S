@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace tehtava5.Properties {
+namespace tehtava8.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -25,14 +25,13 @@ namespace tehtava5.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data source=eight.labranet.jamk.fi;initial catalog=DemoxOy;user=koodari;password=" +
-            "koodari13")]
-        public string connStr {
+        [global::System.Configuration.DefaultSettingValueAttribute("\\\\ghost.labranet.jamk.fi\\TEMP\\Palautteet.xml")]
+        public string FileLoacation {
             get {
-                return ((string)(this["connStr"]));
+                return ((string)(this["FileLoacation"]));
             }
             set {
-                this["connStr"] = value;
+                this["FileLoacation"] = value;
             }
         }
     }
