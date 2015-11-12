@@ -1,0 +1,15 @@
+﻿#Kehys{
+    width:600px; 
+}
+
+#pikkukuva {
+    width:200px; 
+    float: left; 
+    clear:left;   
+}
+
+#tekstiKakat {
+    width:200px; 
+    float: right;
+    clear:right;
+}
